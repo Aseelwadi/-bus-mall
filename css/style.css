@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+header{
+   width: 100% ;
+ height: 10%; 
+}
+
+#logo {
+   width: 150px;
+   height: 150px;
+   padding: 20px;
+}
+
+h1 {
+  font-size: 100px;
+    /* display: inline; */
+    /* margin: auto; */
+    margin-left: 30%;
+    margin-right: 30%;
+    color: #166834;
+    margin-top: 30px;
+    font-family: 'Permanent Marker', cursive;
+
+   
+
+}
+
+body {
+   width: auto;
+   height: 2300px;
+  
+
+}
+
+header {
+ background-color:  rgb(254 254 254);
+    height: 5%;
+    /* box-shadow: 10px 10px #ece0e0; */
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+nav {
+  width: 1000px;
+  /* margin-left: 50px; */
+  margin: auto;
+}
+
+header img {
+  float: left;
+  margin-right: 30px;
+  width:200px;
+  height: 114px;
+}
+
+header ul li {
+  display: inline-block;
+  margin-top: 40px;
+  margin-right: 100px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(3, 32, 10);
+}
+
+main {
+   height: 100%;
+}
+
+
+footer {
+  background-color: #1e09f7;
+  margin-bottom: 0%;
+  width: 100%;
+  height: 3%;
+  text-align: center;
+  font-size: x-large;
+}
+
+#footerP {
+    padding: 20px;
+    color: #f7d3db;
+}
+
+#imagesDiv {
+   text-align: center;
+   padding: 30px;
+  
+}
+
+.imagesDiv {
+   width: 400px;
+   height: 300px;
+   border: 2px solid;
+   margin: 20px;
+}
+
+#showResults {
+   width: 200px;
+   height: 50px;
+   border-radius: 20px;
+   margin-left: 30%;
+   color: #140206;
+   font-size: x-large;
+}
+
+#resultsList{
+  column-count: 2;
+  width: 100%;  padding-left: 10px; margin-left: 150px; margin-top: 35px;
+  list-style-type: circle;
+  font-size: 25px;
+  color: black;
+  line-height: 50px;
+}
+
+.mainWelcome {
+   margin-left: 50px;
+   font-size:40px;
+   color: #f6416c;
+   margin-top: 80px;
+   font-family: fantasy;
+}
+
+.mainP {
+  font-size: 25px;
+  margin-left: 50px;
+  margin-top: 20px;
+  color: #141ed2;
+  line-height: 30px;
+
+}
+
+
+
+canvas{
+
+   width:1200px !important;
+   height:800px !important;
+   margin-left: 60px;
+ 
+ }
+
+ #form {
+  border: 2px solid black;
+    width: 350px;
+    height: 100px;
+    background-color: #7dffe459;
+    color: #250202;
+    margin-left: 100px;
+    margin-top: 40px;
+    font-size: x-large;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+ 
+}

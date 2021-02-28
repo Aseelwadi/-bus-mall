@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusMall</title>
+
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="https://image.freepik.com/free-vector/letter-b-logo-vector_23987-260.jpg">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Vote</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <main>
+      <h1>BUSS MALL</h1>
+      <div>
+      <div>
+            <p class="mainWelcome"> Welcome To Vote On Our Products </p> 
+
+            <p class="mainP ">Choose Which Image Is Your Favorite.<br>
+              I f you dont choose rounds number so After 25 Clicks , Stats Will show Below .</p>
+            </div>
+              <form action="" id="form"> 
+                <label for="roundsNum">How many rounds do you want?</label>
+                <br>
+                <input style="padding: 8px;margin-top: 10px;" type="number"       id="roundsNum" name="roundsNum">    
+                <br> 
+                <input   style="padding: 8px; margin-top: 10px;" type="submit"  value="submit" id="submit">
+        </form>
+            
+
+            <div id="imagesDiv">    
+                <img class="imagesDiv"  src="" alt="" id="firstImage">
+                <img class="imagesDiv"   src="" alt="" id="secondImage">     
+                <img class="imagesDiv"   src="" alt="" id="thirdImage"> 
+
+            </div>
+</div>
+            
+
+            <button  id="showResults" disabled  hidden="hidden" onClick = "click()">Show Results</button> 
+          
+
+
+
+
+
+
+            <ul   id="resultsList"> </ul>
+
+           
+
+           <br>
+            
+      
+
+    </main>
+
+ 
+    <footer>
+
+          <p id="footerP"> Bus Mall © 2020 All Rights Reserved</p>
+
+    </footer>
+     
+  
+    <script src="js/app.js" ></script>
+</body>
+</html>
