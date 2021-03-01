@@ -11,7 +11,7 @@ var thirdProductImage = document.getElementById('thirdImage');
 var showResults = document.getElementById('resultsList');
 var showResultsButton = document.getElementById('showResults');
 var roundsNum = document.getElementById('form');
-
+var ctx = document.getElementById('myChart').getContext('2d');
 
 
 var firstImageIndex;
@@ -91,7 +91,7 @@ function userClick(event) {
        
     } else {
         localStorage.setItem ('productObjects' , JSON.stringify(Products.prototype.allProducts)) ; 
-        imagesDiv.removeEventListener('click', userClick);
+        // imagesDiv.removeEventListener('click', userClick);
         showResultsButton.disabled = false;
         showResultsButton.hidden =false;
        
@@ -167,9 +167,61 @@ function showResult() {
         showResults.appendChild(productsResult);
     }
 
-    
+    makeChart();
 }
 
+
+
+function makeChart() {
+    var chart = new Chart(ctx, 
+    {
+        type: 'bar',
+        data: 
+        {
+            labels: imagesNames,
+            datasets: 
+            [
+                {
+                    label: 'Votes',
+                    backgroundColor: 'rgb(201, 10, 118)',
+                    borderColor: 'rgb(255, 51, 153)',
+                    data: imgVotes,
+                    borderWidth:1,
+            borderStyle:'dash'
+                },
+                {
+                    label: 'Shown',
+                    backgroundColor: 'rgb(6, 98, 27)',
+                    borderColor: 'rgb(248, 220, 129)',
+                    data: imgViews,
+                }
+
+            ]
+        },
+        options: 
+        
+        {
+            labels: {
+                fontColor: 'black'
+                
+            },
+            
+            scales: {
+              xAxes: [{
+                scaleFontSize: 20
+            
+              }]
+             }
+            
+        }
+    });
+    document.getElementById("showResults").innerHTML="Reset";
+    showResultsButton.addEventListener('click', reset);
+}
+
+function reset (){
+    window.location.reload();
+}
 
 
 //if there is anything in the local storage, then get it and parse it
@@ -183,7 +235,6 @@ if (localStorage.getItem('productObjects')) {
 
 
 
-
-
-
+document.getElementById("showResults").value="Reset";
+       
 
