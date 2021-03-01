@@ -12,7 +12,7 @@ header{
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 60px;
     /* display: inline; */
     /* margin: auto; */
     margin-left: 30%;
@@ -116,7 +116,7 @@ footer {
 }
 
 .mainWelcome {
-   margin-left: 50px;
+   margin-left:25px;
    font-size:40px;
    color: #f6416c;
    margin-top: 80px;
@@ -124,7 +124,7 @@ footer {
 }
 
 .mainP {
-  font-size: 25px;
+  font-size: 18px;
   margin-left: 50px;
   margin-top: 20px;
   color: #141ed2;
