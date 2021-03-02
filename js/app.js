@@ -90,7 +90,6 @@ function userClick(event) {
         }
        
     } else {
-        // localStorage.setItem ('productObjects' , JSON.stringify(Products.prototype.allProducts)) ; 
         imagesDiv.removeEventListener('click', userClick);
         showResultsButton.disabled = false;
         showResultsButton.hidden =false;
