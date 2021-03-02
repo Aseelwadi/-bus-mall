@@ -90,7 +90,11 @@ function userClick(event) {
         }
        
     } else {
+<<<<<<< HEAD
+        // localStorage.setItem ('productObjects' , JSON.stringify(Products.prototype.allProducts)) ; 
+=======
         
+>>>>>>> e9686fc5078f89c0f24c8dcf4fff7b77e0d82fda
         imagesDiv.removeEventListener('click', userClick);
         showResultsButton.disabled = false;
         showResultsButton.hidden =false;
