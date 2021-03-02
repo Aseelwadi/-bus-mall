@@ -229,12 +229,12 @@ function reset (){
 if (localStorage.getItem('productObjects')) {
          
     Products.prototype.allProducts = JSON.parse (localStorage.getItem('productObjects')) ;
- 
+   
 } 
 
 
 
 
-document.getElementById("showResults").value="Reset";
+
        
 
