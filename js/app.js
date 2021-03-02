@@ -90,7 +90,7 @@ function userClick(event) {
         }
        
     } else {
-        localStorage.setItem ('productObjects' , JSON.stringify(Products.prototype.allProducts)) ; 
+        // localStorage.setItem ('productObjects' , JSON.stringify(Products.prototype.allProducts)) ; 
         imagesDiv.removeEventListener('click', userClick);
         showResultsButton.disabled = false;
         showResultsButton.hidden =false;
@@ -172,13 +172,7 @@ function showResult() {
 
 
 
-//if there is anything in the local storage, then get it and parse it
 
-if (localStorage.getItem('productObjects')) {
-         
-    Products.prototype.allProducts = JSON.parse (localStorage.getItem('productObjects')) ;
- 
-} 
 
 
 
